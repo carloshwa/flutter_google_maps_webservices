@@ -642,7 +642,7 @@ class PlaceDetails {
 
   final String? icon;
 
-  final String name;
+  final String? name;
 
   /// JSON opening_hours
   final OpeningHoursDetail? openingHours;
@@ -651,7 +651,7 @@ class PlaceDetails {
   final List<Photo> photos;
 
   /// JSON place_id
-  final String placeId;
+  final String? placeId;
 
   /// JSON international_phone_number
   final String? internationalPhoneNumber;
@@ -682,8 +682,8 @@ class PlaceDetails {
 
   PlaceDetails({
     this.adrAddress,
-    required this.name,
-    required this.placeId,
+    this.name,
+    this.placeId,
     this.utcOffset,
     this.id,
     this.internationalPhoneNumber,
